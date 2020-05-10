@@ -1,14 +1,14 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const transactionSchema = new Schema({
+const citySchema = new Schema({
     name: String,
     tempratue: Number,
     condition: String,
     conditionPic: String
 })
 
-const City = mongoose.model("city", transactionSchema)
+const City = mongoose.model("City", citySchema)
 
 module.exports = City
 
