@@ -1,0 +1,23 @@
+.main-container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    text-align: center;
+    object-position: center;
+}
+
+.search-bar {
+    background-color: aquamarine;
+}
+
+#container {
+    display: grid;
+    grid-template-rows: auto;
+    height: 100%;
+    width: 100%;
+    background-color: bisque
+}
+
+h3{
+    background-color: black;
+}

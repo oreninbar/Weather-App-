@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+
 </head>
+
 <body>
-    
+    <div class="main-container">
+        <div class="search-bar">
+            <input type="text" class="input" placeholder="Enter City...  ">
+            <span id="search-it" class="search"><i class="fas fa-search"></i></span>
+        </div>
+
+        <div id="container"></div>
+
+            <script id="weather" type="text/x-handlebars-template">
+                {{#each cities}}
+                 <h3>{{cities.name}}</h3>
+                {{/each}}
+            </script>
+<!-- 
+                <button class="remove">remove</button>
+                <div>
+                    <h2>{{temprature}}</h2>
+                    <h4>{{name}}</h4>
+                </div>
+                <div>
+                    <img src="{{conditionPic}}" alt="">
+                    <h2>{{condition}}</h2>
+                </div> -->
+     
+    </div>
+
+    <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+    <script src="/handlebars/dist/handlebars.js"></script>
+    <script src="/jquery/dist/jquery.js"></script>
+    <script src="view.js"></script>
+    <script src="model.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
